@@ -1,6 +1,7 @@
 body {
     font-size: 2em;
-    background-color: peachpuff;
+    color: #E8E3C5;
+    background: url("grey_wash_wall.png");
     width: 80%;
     margin: 0 auto;
 }
