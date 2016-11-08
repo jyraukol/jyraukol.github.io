@@ -4,3 +4,8 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
+#theDude {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+    border-radius: 25px;
+}
