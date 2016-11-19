@@ -1,9 +1,16 @@
 body {
     font-size: 2em;
-    color: #E8E3C5;
+    color: #524656;
     background: url("background.png");
-    width: 80%;
-    margin: 0 auto;
+    
+}
+
+main {
+    max-width: 800px;
+    margin: 1em auto;
+    background: #E4DCCB;
+    padding: 0.3em 2em;
+    border-radius: 10px;
 }
 
 #theDude {
@@ -16,4 +23,14 @@ body {
 
 .clear {
     clear: both;
+}
+
+a {
+    color: #EA7A58;
+}
+
+footer {
+    font-size: 0.5em;
+    color: black;
+    text-align: center;
 }
