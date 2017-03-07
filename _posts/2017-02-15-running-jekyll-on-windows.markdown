@@ -7,7 +7,7 @@ categories: jekyll
 # How to get Jekyll running on Windows 10
 
 I've been meaning to try out Jekyll for some time. Installing Jekyll was simple on my Linux laptop, but Jekyll isn't officially supported on Windows. On Windows 10, getting Jekyll to run,
-required some additional steps. Writing them down also makes for great practice writing Jekyll posts. 
+required some additional steps. Writing them down also makes for great practice writing Jekyll posts.
 
 If you want to learn more about Jekyll, head on over to [https://jekyllrb.com/](https://jekyllrb.com/).
 
@@ -41,3 +41,37 @@ rbenv install 2.4.0
 rbenv global 2.4.0
 ruby -v
 ```
+Now we are ready to install Jekyll itself. It's simple, just install the Ruby gem.
+Install the bundler gem at the same time.
+```
+gem install jekyll bundler
+```
+Create a new Jekyll site and get it running:
+```
+jekyll new jekyll-test
+cd jekyll-test
+jekyll serve
+```
+Jekyll should start up and you can access the site at localhost:4000.
+## Issues
+You might notice a warning about automatic generation not working with
+Bash on Ubuntu on Windows. Jekyll will automatically generate and serve files
+that have been changed while Jekyll is running. This is nice when developing
+your site.
+But this feature might not work on Windows 10 or Jekyll won't even start.
+If you have trouble starting Jekyll, you can disable automatic generation:
+```
+jekyll serve --no-watch
+```
+With the no-watch argument you have to restart Jekyll to see changes to your site.
+
+The issue is detailed [here](https://github.com/Microsoft/BashOnWindows/issues/216).
+It has been resolved and should be included in the next big Windows 10 update,
+the Creators Update. So you can just live without automatic generation for now
+and wait for the update. If you are subscribed to the Windows Insider builds,
+you should have the update already.
+
+## Resources
+* [https://jekyllrb.com/](https://jekyllrb.com/)
+* [https://labs.sverrirs.com/jekyll/](https://labs.sverrirs.com/jekyll/)
+Another way of installing Jekyll.
